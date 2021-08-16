@@ -1,0 +1,17 @@
+{
+  "name": "gql-example-gomoku",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "hanayashiki",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/client",
+      "packages/server"
+    ],
+    "nohoist": [
+      "graphql-codegen"
+    ]
+  }
+}

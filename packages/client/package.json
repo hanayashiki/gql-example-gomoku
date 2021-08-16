@@ -1,0 +1,36 @@
+{
+  "name": "client",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "generate": "graphql-codegen --config codegen.yml"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.4.7",
+    "@types/react-router-dom": "^5.1.8",
+    "autoprefixer": "^10.3.1",
+    "graphql": "^15.5.1",
+    "postcss": "^8.3.6",
+    "preact": "^10.5.13",
+    "react-router-dom": "^5.2.0",
+    "tailwindcss": "^2.2.7"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "2.0.1",
+    "@preact/preset-vite": "^2.0.0",
+    "typescript": "^4.3.2",
+    "vite": "^2.4.4",
+    "@graphql-codegen/typescript-operations": "^2.0.1",
+    "@graphql-codegen/typescript": "^2.0.0",
+    "@graphql-codegen/typescript-react-apollo": "^3.0.0",
+    "@graphql-codegen/introspection": "^2.0.0"
+  },
+  "workspaces": {
+    "nohoist": [
+      "@graphql-codegen/cli"
+    ]
+  }
+}
